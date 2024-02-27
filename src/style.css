@@ -1,0 +1,775 @@
+#search{
+border: none;
+outline: none;
+background: transparent;
+width: 400px;
+}
+#search:focus{
+    border: none !important;
+    outline: none !important;
+}
+#form-search{
+    background-color: #ecf0f1;
+    padding: 5px 10px 10px 100px;
+    width: 100%;
+    border-radius: 10px;
+}
+#icon-search{
+    color: #95a5a6;
+}
+.log{
+    text-decoration: none;
+    color: #2d3436;
+    margin-right: 8px;
+}
+.logIn{
+    border: 1px solid #95a5a6;
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+#icon-shop{
+    font-size: 25px;
+    margin-left: 10px;
+}
+#icon-shop{
+    cursor: pointer;
+}
+.logIn{
+    cursor: pointer;
+}
+*{
+    box-sizing: border-box;
+}
+.tabs{
+    display: flex;
+    position: relative;
+
+    /* --active-tab: 0; */
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 30px;
+}
+.underline{
+    position: absolute;
+    bottom: 0;
+    /* left: calc(var(--active-tab)*100px); */
+    width: 100px;
+    height: 4px;
+    /* background-color: red; */
+}
+.navigator{
+    justify-content: space-between;
+}
+
+.tab {
+    position: relative;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .tab:active {
+    transform: scale(.98);
+    box-shadow: .1px .1px 2px red;
+  }
+  
+  .tab span {
+    position: absolute;
+    background: red;
+    transition: .5s;
+  }
+  .tab:hover span:nth-child(3) {
+    height: 100%;
+  }
+  
+  .tab span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 3px;
+  }
+  
+  .tab:hover span:nth-child(4) {
+    width: 100%;
+  }
+#imagePerson{
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    padding: 3px;
+}
+#personProfile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+  .personImg{
+    display: flex;
+    align-items: center;
+    border: 2px solid #e2336b;
+    border-radius: 50%;
+  }
+.textPerson{
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+#imageBannerPerson{
+    width: 100%;
+    height: 350px;
+}
+.owl-prev .owl-next{
+    width: 100px;
+    color: brown;
+}
+.ApplicationProduct{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+#imageAppProduct{
+    margin-top: 10px;
+    /* margin: 10px 0px auto; */
+    width: 80px;
+    border-radius: 30%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+#AppTitle{
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+}
+.card{
+    width: 200px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+#imageProductDigicala{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    padding: 5px;
+}
+.textTitleProductDigikala{
+    display: flex;
+    justify-content: space-between;
+}
+.rightProductDigicala{
+    background-color: #d32f2f;
+    /* border-right: 10px solid #e74c3c; */
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    padding: 1px 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.leftProductDigikala{
+    color: #222f3e;
+}
+.main-item{
+    background-color: transparent;
+    height: 200px;
+    cursor: pointer;
+}
+.boxImage{
+    width: 100%;
+    height: 180px;
+}
+.imageIncredible{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+.offer{
+    display: flex;
+    margin: 10px;
+    background-color: #c8d6e5;
+    align-items: center;
+    border-radius: 30px;
+    text-align: center;
+}
+.title-incredible{
+    width: 100px;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+#img-incrdible{
+    width: 70px;
+    border-radius: 50%;
+    margin-top: 20px;
+    
+}
+.product-incredible{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.title-product-incredible{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    width: 50px;
+    margin-bottom: 5px;
+}
+.title-discount{
+    background-color: #4cd137;
+    border-radius: 50px;
+    color: #ecf0f1;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+.offer-title{
+    background-color: white;
+    border-radius: 50px;
+    color: #4cd137;
+    margin: 2px;
+    /* padding: 3px; */
+    display: flex;
+    cursor: pointer;
+}
+.images{
+    cursor: pointer;
+    display: flex;
+}
+.card-img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.titleGroup{
+    text-align: center;
+    justify-content: center;
+    margin: 20px auto;
+    display: block;
+}
+
+
+  
+#image-group{
+    width: 100px;
+    text-align: center;
+}
+.group-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px 6px;
+    font-size: 14px;
+}
+
+.proposal1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #dcdde1;
+    border-radius: 20px 20px 0 0;
+}
+.proposal2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #dcdde1;
+    border-radius: 0px 0px 20px 20px;
+}
+.proposal{
+    border-left: 1px solid #dcdde1;
+    justify-content: center;
+    margin: auto;
+    padding: 25px;
+}
+.proposal div img{
+    width: 100px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    
+}
+.title-proposal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* #imageProposal{
+    background-color: #bdc3c7;
+    padding: 20px;
+}
+#imgProposal{
+    background-color: #bdc3c7;
+    border-radius: 50%;
+} */
+.title-popular{
+    justify-content: center;
+    align-items: center;
+    direction: rtl;
+}
+#icon-popular{
+    color: #f9ca24;
+    font-size: 25px;
+}
+#brand-popular{
+    font-size: 25px;
+    text-decoration: bold;
+    font-weight: bold;
+}
+#image-popular{
+    width: 100px;
+    margin: auto;
+}
+#popular{
+    margin: 10px 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 20px;
+    padding: 20px;
+}
+.image-cardPopular{
+    margin: 10px;
+    border-radius: 20px;
+    width: 90%;
+}
+.paragraf-cover{
+    font-size: 14px;
+}
+.image1{
+    border-left: 1px solid #dcdde1;
+}
+.image2{
+    border-top: 1px solid #dcdde1;
+}
+.row div img{
+    padding: 10px;
+}
+.card-header{
+    background-color: white;
+}
+.card-footer{
+    color: #3498db;
+    background-color: white;
+}
+.rowCard{
+    border: 2px solid #f1f2f6;
+    border-radius: 20px;
+    margin: 20px;
+}
+.cards{
+    padding: 20px;
+    border-left: 2px solid #f1f2f6;
+}
+.card-popular{
+    margin: 10px;
+}
+.row-digiplus{
+    background-color: #941b80;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    height: auto;
+}
+
+.icon-digiplus{
+    color: #941b80;
+}
+.left{
+    color: #941b80;
+}
+.png{
+    position: relative;
+    margin-bottom: auto;
+}
+.main-digiclub{
+    display: flex;
+    justify-content: space-between;
+    background-color:  #007295;
+    direction: rtl;
+    border-radius: 20px;
+}
+.image-digiclub{
+    width: 150px;
+}
+.icon-digiclub{
+    color: #007295;
+}
+.digiclub-card p{
+    color: black;
+    font-size: 14px;
+}
+.digiclub-card{
+    border-radius: 0px 30px 0px 30px;
+}
+#sell-image{
+    width: 100px;
+}
+#heading-sell{
+    color: #19bfd3;
+    margin: 20px 10px;
+}
+.text-sell{
+    font-size: 14px;
+}
+.icon-sell{
+    font-size: 25px;
+    color: #f9a825;
+}
+.sell-see{
+    color: #5cbfd3;
+}
+.main-best-sell{
+    border: 1px solid #dcdde1;
+    border-radius: 20px;
+    margin: 20px;
+}
+.banner-sell{
+    border-radius: 40px;
+}
+.rightProductDigicala2{
+    background-color: #d32f2f;
+    /* border-right: 10px solid #e74c3c; */
+    border-radius: 10px;
+    color: white;
+    font-size: 14px;
+    padding: 1px 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.slecte-col{
+    border-right: 1px solid #dcdde1;
+    border-bottom: 1px solid #dcdde1;
+}
+.icon-select{
+    font-size: 20px;
+    color: red;
+}
+.main-slecte{
+    border: 1px solid #dcdde1;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.headerSelecte{
+    cursor: pointer;
+}
+.row-select{
+    cursor: pointer;
+}
+
+
+.more-read{
+    font-size: 14px;
+    color: #19bfd3;
+}
+.text-read{
+    font-size: 20px;
+}
+.img-read{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    border-radius: 20px;
+}
+#text-read{
+    font-size: 16px;
+}
+.col-read{
+    border-radius: 10px;
+    border: 1px solid #dcdde1;
+    /* width: 23%; */
+    /* margin: 10px; */
+    padding: 10px;
+}
+.row-read{
+    margin: 10px;
+}
+.img-footer{
+    text-align: center;
+    margin: auto;
+}
+.header-text-footer{
+    font-weight: bold;
+}
+.icon-alone-footer{
+    font-size: 30px;
+    color: #a1a3a8;
+}
+.email{
+    font-weight: bold;
+    margin-top: 20px;
+}
+#email-footer{
+    background-color:#f0f0f1;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+}
+#submit-footer{
+    background-color:#e0e0e2;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 10px;
+    height: 50px;
+    margin-top: 10px;
+}
+.img-footer-footer{
+    width: 50px;
+    height: 50px;
+}
+.more{
+    height: 40px;
+    margin: auto;
+}
+.footer-footerMain{
+    background-color: #3c4b6d;
+    margin: 10px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+.img2-footer{
+    width: 100px;
+    border: 1px solid #e0e0e2;
+    border-radius: 20px;
+    margin: 10px;
+}
+.img2-footer2{
+    width: 90px;
+    border: 1px solid #e0e0e2;
+    border-radius: 20px;
+    margin: 10px;
+}
+.text-top{
+    text-decoration: none;
+    border: 3px solid #e0e0e2;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.login-component{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 100px;
+}
+.input-login:focus{
+    border: 1px solid red;
+    outline: none;
+}
+.input-login{
+    width: 90%;
+}
+#linkLogin{
+    text-decoration: none;
+    color: black;
+}
+@font-face {
+    font-family: yecan;
+    src: url("./fonts/iranyekanwebbold.ttf");
+}
+*{
+    font-family: yecan;
+}
+/* @media(max-width : 768px){
+    .navbar-positon{
+position: static;
+height: auto;
+    }
+} */
+
+
+/* mobile */
+@media (max-width:367px) {
+    #person{
+        margin-top: 50px;
+    }
+    #imageBannerPerson{
+        height: 100px;
+      }
+     
+      
+}
+@media (max-width:767px) {
+    #person{
+    margin-top: 5px;
+} 
+  .d-flex {
+    display: flex;
+  }
+  .main-digiclub div.left .digiclub-card{
+    flex-direction: column;
+    width: 115px;
+  }
+  .justify-content-center {
+    justify-content: center; /* متن را در وسط افقی مرکز چین کن */
+  }
+  
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .group2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .group-main {
+    flex-basis: calc(33.33% - 10px); 
+    box-sizing: border-box; 
+  }
+.title-incredible{
+    display: none;
+}.offer{
+    flex-direction: column;
+}
+.navbar-positon{
+    margin-bottom: 5px;
+    background-color: white;
+}
+.p-offer{
+    display: none;
+}
+#navDisplay{
+    display: none;
+  }
+  #imageBannerPerson{
+    height: 200px;
+  }
+  .proposal {
+    display: flex;
+    flex-wrap: wrap; /* اضافه کردن خاصیت wrap برای شکل‌دهی به المان‌ها */
+  }
+  
+  #imgProposal {
+    flex-basis: 100%; /* عرض کامل در صورتی که جا کم باشد */
+  }
+  
+  #imageProposal {
+    width: 100%; /* عرض کامل برای تصویر */
+  }
+  
+  .m-auto {
+    margin: auto; /* مرکز چین کردن متن */
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center; /* متن را در وسط افقی مرکز چین کن */
+  }
+  .digiplusLogo{
+    position: relative;
+  }
+  .main-digiclub{
+    flex-direction: column !important;
+  }
+  .image-digiclub{
+    width: 20px !important;
+    padding: 10px !important;
+}
+.digiclub-card{
+    width: 180px;
+}
+#Footer{
+    display: none;
+}
+.leftProductDigikala{
+    margin: auto;
+}
+.price{
+    margin: auto;
+}
+}
+/* tablet */
+@media (max-width:1024px) {
+    #person{
+        margin-top: 150px;
+    }
+    .nav-left{
+        display: none;
+    }
+    .nav-right{
+        width: 80%;
+        justify-content: center;
+        margin: auto;
+    }
+    #navDisplay{
+      display: none;
+    }
+    .navbar-positon{
+        margin-bottom: 100px;
+        background-color: white;
+    }
+    .title-discount{
+        display: none;
+    }
+    /* .product-incredible{
+        display: none;
+    }
+    .title-incredible{
+        display: none;
+    } */
+    .offer-title{
+        margin: auto;
+    }
+    .offer{
+        flex-direction: column;
+    }
+    .digiplusLogo{
+        width: 400px !important;
+        margin: auto !important;
+    }
+    .photo-digi{
+       margin-bottom: 5px !important;
+    }
+    .image-digiclub{
+        width: 100px !important;
+    }
+    /* .slecte-col{
+        grid-template-columns: repeat(5, 1fr) !important;
+        margin: 20px !important;
+        padding: 20px !important;
+    } */
+}
+@media (max-width:1300px) {
+    .navbar-positon{
+        /* margin-bottom: 100px; */
+        background-color: white;
+    }
+    #person{
+        margin-top: 230px;
+    } 
+    .group{
+        display: flex;
+        margin: 5px;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        /* grid-template-columns: repeat(6, 1fr); */
+    }
+    .group2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+    }
+}
