@@ -31,10 +31,10 @@ const ProductCover2 = ()=>{
                 </div>
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-lg-6"><img src={card1}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-lg-6"><img src={card2}className='w-100 m-3' alt="" /></div>
-                        <div className="col-lg-6"><img src={card3}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-lg-6"><img src={card4}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6"><img src={card1}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={card2}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6"><img src={card3}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={card4}className='w-100 m-3' alt="" /></div>
                     </div>
                 </div>
                 <div className="card-footer d-flex justify-content-center"dir='ltr' >
@@ -52,10 +52,10 @@ const ProductCover2 = ()=>{
                 </div>
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-lg-6"><img src={card5}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-lg-6"><img src={card6}className='w-100 m-3' alt="" /></div>
-                        <div className="col-lg-6"><img src={card7}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-lg-6"><img src={card8}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6"><img src={card5}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={card6}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6"><img src={card7}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={card8}className='w-100 m-3' alt="" /></div>
                     </div>
                 </div>
                 <div className="card-footer d-flex justify-content-center"dir="ltr">
@@ -73,10 +73,10 @@ const ProductCover2 = ()=>{
                 </div>
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-lg-6"><img src={card9}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-lg-6"><img src={card10}className='w-100 m-3' alt="" /></div>
-                        <div className="col-lg-6"><img src={card11}className='w-100 m-3 image1 ' alt="" /></div>
-                        <div className="col-lg-6"><img src={card12}className='w-100 m-3 ' alt="" /></div>
+                        <div className="col-6"><img src={card9}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={card10}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6"><img src={card11}className='w-100 m-3 image1 ' alt="" /></div>
+                        <div className="col-6"><img src={card12}className='w-100 m-3 ' alt="" /></div>
                     </div>
                 </div>
                 <div className="card-footer d-flex justify-content-center"dir="ltr">
@@ -93,10 +93,10 @@ const ProductCover2 = ()=>{
                 </div>
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-lg-6"><img src={card13}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-lg-6"><img src={card14}className='w-100 m-3' alt="" /></div>
-                        <div className="col-lg-6"><img src={card15}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-lg-6"><img src={card16}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6"><img src={card13}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={card14}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6"><img src={card15}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={card16}className='w-100 m-3' alt="" /></div>
                     </div>
                 </div>
                 <div className="card-footer d-flex justify-content-center"dir="ltr">

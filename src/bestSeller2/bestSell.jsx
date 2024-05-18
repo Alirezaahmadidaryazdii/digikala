@@ -4,7 +4,26 @@ import ProductRead from "./productRead";
 import ProductBestSell2 from "./productBestSell";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFireFlameCurved, faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { useState, useEffect } from "react";
 const BestSell2 = () => {
+  const [isWideScreen, setIsWideScreen] = useState(false);
+  const [isWideScreenMobile,setIsWideMobile] = useState(false);
+  const [isWideScreenLaptop,setIsWideLaptop] = useState(false);
+  useEffect(() => {
+    const checkScreenWidth = () => {
+      setIsWideScreen(window.innerWidth <= 900 && window.innerWidth > 500);
+      setIsWideMobile(window.innerWidth < 500);
+      setIsWideLaptop(window.innerWidth > 900)
+    };
+
+    checkScreenWidth();
+
+    window.addEventListener("resize", checkScreenWidth);
+
+    return () => {
+      window.removeEventListener("resize", checkScreenWidth);
+    };
+  }, []);
   return (
     <>
       <div className="main-best-sell">
@@ -20,9 +39,20 @@ const BestSell2 = () => {
         </div>
 
         <div className="row" dir="rtl">
-          {dataBestSell2.map((item) => (
+        {isWideScreenMobile
+          &&  dataBestSell2.filter((item)=>item.id <= 5).map((item) => (
             <ProductBestSell2 key={item.id} product={item} />
           ))}
+          
+          {isWideScreen
+          &&  dataBestSell2.filter((item)=>item.id <= 5).map((item) => (
+            <ProductBestSell2 key={item.id} product={item} />
+          ))}
+          {isWideScreenLaptop
+          && dataBestSell2.map((item) => (
+            <ProductBestSell2 key={item.id} product={item} />
+          ))
+          }
         </div>
       </div>
       <div className="readingMain">

@@ -112,4 +112,9 @@ const dataProductDigikala = [
         discount: "۸,۷۰۰,۰۰۰"
     },
 ]
-export {dataServies, dataProductDigikala}
+function getProductData(id){
+    let productData = dataProductDigikala.find((product)=> product.id === id)
+    return productData
+}
+
+export {dataServies, dataProductDigikala,getProductData}

@@ -19,7 +19,7 @@ const Popular = ()=>{
       767:{
         items: 5
       },
-      367:{
+      360:{
         items: 3
       }
     }

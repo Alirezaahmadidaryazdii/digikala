@@ -58,7 +58,7 @@ const ProductFooter = () => {
         </div>
         <div className="texts-footer mt-5">
             <div className="row m-2">
-                <div className="col-lg-3">
+                <div className="col-sm-3 col-lg-3">
                     <div className="header-text-footer">
                         <p id="footer-text">با دیجیکالا</p>
                     </div>
@@ -71,7 +71,7 @@ const ProductFooter = () => {
                         <p className="text-muted">درباره دیجیکالا</p>
                     </div>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-sm-3 col-lg-3">
                     <div className="header-text-footer">
                         <p id="footer-text">خدمات مشتریان</p>
                     </div>
@@ -83,7 +83,7 @@ const ProductFooter = () => {
                         <p className="text-muted">گزارش باگ</p>
                     </div>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-sm-3 col-lg-3">
                     <div className="header-text-footer">
                         <p id="footer-text">راهنمای خرید از دیجیکالا</p>
                     </div>
@@ -93,7 +93,7 @@ const ProductFooter = () => {
                         <p className="text-muted">شیوه های پرداخت</p>
                     </div>
                 </div>
-                <div className="col-lg-3">
+                <div className="col-sm-3 col-lg-3">
                     <div className="header-text-footer">
                         <p id="footer-text">  همراه ما باشید </p>
                     </div>

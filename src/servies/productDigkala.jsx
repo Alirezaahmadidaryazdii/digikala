@@ -28,7 +28,7 @@
 // ProductDigikala.jsx
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import ShowProduct from "../componentRout/showProductDigikala";
+// import ShowProduct from "../componentRout/showProductDigikala";
 import { Link } from 'react-router-dom';
 import '../style.css';
 

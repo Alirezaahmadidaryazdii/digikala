@@ -22,7 +22,7 @@ const ProductCover = ()=>{
         <>
           <div className="container-fluid">
           <div className="row rowCard"dir='rtl'>
-          <div className="col-lg-3 col-md-12">
+          <div className="col-lg-3 col-sm-6 card-col">
             <div className="cards w-100">
                 <div className="card-header">
                     <h6 className='text-sm'>گوشی موبایل</h6>
@@ -30,10 +30,10 @@ const ProductCover = ()=>{
                 </div>
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-sm-6 "><img src={cover1}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-sm-6"><img src={cover2}className='w-100 m-3' alt="" /></div>
-                        <div className="col-sm-6"><img src={cover3}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-sm-6"><img src={cover4}className='w-100 m-3' alt="" /></div>
+                        <div className=" col-6"><img src={cover1}className='w-100 m-3 image1' alt="" /></div>
+                        <div className=" col-6"><img src={cover2}className='w-100 m-3' alt="" /></div>
+                        <div className=" col-6"><img src={cover3}className='w-100 m-3 image1' alt="" /></div>
+                        <div className=" col-6"><img src={cover4}className='w-100 m-3' alt="" /></div>
                     </div>
                 </div>
                 <div className="card-footer d-flex justify-content-center"dir='ltr' >
@@ -43,7 +43,7 @@ const ProductCover = ()=>{
                 
             </div>
           </div>
-          <div className="col-lg-3 col-md-12">
+          <div className="col-lg-3 col-sm-6 card-col">
             <div className="cards w-100">
                 <div className="card-header">
                     <h6 className='text-sm'>کیف و کاور گوشی</h6>
@@ -51,10 +51,10 @@ const ProductCover = ()=>{
                 </div>
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-sm-6 "><img src={bag1}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-sm-6"><img src={bag2}className='w-100 m-3' alt="" /></div>
-                        <div className="col-sm-6"><img src={bag3}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-sm-6"><img src={bag4}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6 "><img src={bag1}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={bag2}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6"><img src={bag3}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={bag4}className='w-100 m-3' alt="" /></div>
                     </div>
                 </div>
                 <div className="card-footer d-flex justify-content-center"dir="ltr">
@@ -64,7 +64,7 @@ const ProductCover = ()=>{
                 
             </div>
           </div>
-          <div className="col-lg-3 col-md-12">
+          <div className="col-lg-3 col-sm-6 card-col">
             <div className="cards w-100">
                 <div className="card-header">
                     <h6 className='text-sm'>هدفون هدست و هندزفری</h6>
@@ -72,10 +72,10 @@ const ProductCover = ()=>{
                 </div>
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-sm-6 "><img src={headphon1}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-sm-6"><img src={headphon2}className='w-100 m-3' alt="" /></div>
-                        <div className="col-sm-6"><img src={headphon3}className='w-100 m-3 image1 ' alt="" /></div>
-                        <div className="col-sm-6"><img src={headphon4}className='w-100 m-3 ' alt="" /></div>
+                        <div className="col-6 "><img src={headphon1}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={headphon2}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6"><img src={headphon3}className='w-100 m-3 image1 ' alt="" /></div>
+                        <div className="col-6"><img src={headphon4}className='w-100 m-3 ' alt="" /></div>
                     </div>
                 </div>
                 <div className="card-footer d-flex justify-content-center"dir="ltr">
@@ -84,7 +84,7 @@ const ProductCover = ()=>{
                 </div>
             </div>
           </div>
-          <div className="col-lg-3 col-md-12">
+          <div className="col-lg-3 col-sm-6 card-col">
             <div className="cardsr p-3 w-100">
                 <div className="card-header">
                     <h6 className='text-sm'>ساعت هوشمند</h6>
@@ -92,10 +92,10 @@ const ProductCover = ()=>{
                 </div>
                 <div className="card-body">
                     <div className="row">
-                        <div className="col-sm-6 "><img src={watch1}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-sm-6"><img src={watch2}className='w-100 m-3' alt="" /></div>
-                        <div className="col-sm-6"><img src={watch3}className='w-100 m-3 image1' alt="" /></div>
-                        <div className="col-sm-6"><img src={watch4}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6 "><img src={watch1}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={watch2}className='w-100 m-3' alt="" /></div>
+                        <div className="col-6"><img src={watch3}className='w-100 m-3 image1' alt="" /></div>
+                        <div className="col-6"><img src={watch4}className='w-100 m-3' alt="" /></div>
                     </div>
                 </div>
                 <div className="card-footer d-flex justify-content-center"dir="ltr">

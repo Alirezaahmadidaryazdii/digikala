@@ -8,7 +8,7 @@ const ProductProposal = ({product})=>{
             <div id="imgProposal">
                 <img src={product.image} alt="" id="imageProposal"/>
             </div>
-            <p className="m-auto d-flex justify-content-center">{product.title}</p>
+            <p className="m-auto d-flex justify-content-center text-center">{product.title}</p>
           </div>
         </div>
     )
