@@ -3,7 +3,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 // style
 import "../style.css";
 // import context and hook
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../Context/shopContext";
 // font awsome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,8 +11,20 @@ import {faPlus,faMinus,faBagShopping} from "@fortawesome/free-solid-svg-icons";
 
 // bootstrap
 import { Toast } from "react-bootstrap";
+import toast from "react-hot-toast";
 // function
 const ShowProductComponent = ({ itemProduct }) => {
+  // console.log('item Product: ' , itemProduct.title)
+  // console.log(itemProduct.images[0])
+  // console.log(itemProduct)
+  const [urlImage, setUrlImage] = useState("")
+  useEffect(()=>{
+    const regex = /\["(https:\/\/[^\s]+)"/;
+    const match = itemProduct.images[0].match(regex);
+    setUrlImage(match)
+    console.log(urlImage)
+  },[])
+
   const {cart, plusToCard, removeCart} = useContext(ShopContext);
   const [turn, setTurn] = useState(false);
   const [show, setShow] = useState(false);
@@ -21,6 +33,7 @@ const ShowProductComponent = ({ itemProduct }) => {
     setTurn(true);
     plusToCard(id);
     setShow(true);
+    toast.success('با موفقیت افزوده شد')
   }
   const turningDecrease = (id)=>{
     setTurn(false);
@@ -30,26 +43,27 @@ const ShowProductComponent = ({ itemProduct }) => {
   return (
     <>
     <div className="col-lg-4 col-md-4 col-6 main-show">
-    <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide  dir="rtl">
+    {/* <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide  dir="rtl">
         <Toast.Header>
         </Toast.Header>
         <Toast.Body className="toast-body  m-auto">
         <FontAwesomeIcon icon= {faBagShopping } className="mx-1 btn btn-lg "/>
           به سبد خرید اضافه شد </Toast.Body>
-      </Toast>
+      </Toast> */}
       <div className=" card-show p-3">
-        <img src={itemProduct.image} alt="" id="imageShowProductDigicala" />
-        <div className="textTitleProductDigikala" dir="rtl">
-          <div className="rightProductDigicala mx-2">{itemProduct.rebate}</div>
+        <img src={urlImage? urlImage : 'https://via.placeholder.com/150?text=No+Image'} alt="" id="imageShowProductDigicala" />
+        <div className="textTitleProductDigikala d-flex justify-content-center flex-column" dir="rtl">
+          <p className="">{itemProduct.title}</p>
+          {/* <div className="rightProductDigicala mx-2">{itemProduct.rebate}</div> */}
           <div className="leftProductDigikala" dir="rtl">
-            {itemProduct.price} <span className="text-sm">تومان</span>
+            {itemProduct.price} <span className="text-sm">$</span>
           </div>
         </div>
-        <div className="price">
+        {/* <div className="price">
           <p className="text-decoration-line-through text-muted">
             {itemProduct.discount}
           </p>
-        </div>
+        </div> */}
         {isInCart==false||cart?.filter((item) => item.id === itemProduct.id)[0]?.count === 0 ? (
         <button className="addCardShop btn btn-danger"onClick={()=>turningIncrease(itemProduct.id)}>افزودن به سبد خرید</button>
         ):null}

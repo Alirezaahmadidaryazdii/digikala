@@ -1,3 +1,4 @@
+
 import App1 from '../image/digikalaApp1.png';
 import App2 from '../image/digikalaApp2.png';
 import App3 from '../image/digikalaApp3.png';
@@ -47,74 +48,98 @@ const dataServies = [
         title:"پیش بینی بزرگ"
     },
 ]
-const dataProductDigikala = [
-    {
-        id: 1,
-        image: productDigikala1,
-        price:"۶۹۹۰۰۰",
-        rebate: "۹%",
-        discount: "۷۶۵۰۰۰"
-    },
-    {
-        id: 2,
-        image: productDigikala2,
-        price:"۹۴۹۹۰۰۰",
-        rebate: "۵%",
-        discount: "۹۹۹۹۰۰۰"
-    },
-    {
-        id: 3,
-        image: productDigikala3,
-        price:"۱۵,۵۹۵,۰۰۰",
-        rebate: "3%",
-        discount: "۱۶,۱۴۹,۰۰۰"
-    },
-    {
-        id: 4,
-        image: productDigikala4,
-        price:"۹,۲۸۰,۰۰۰",
-        rebate: "3%",
-        discount: "۹,۵۶۹,۰۰۰"
-    },
-    {
-        id: 5,
-        image: productDigikala5,
-        price:"۴۰,۸۸۹,۰۰۰",
-        rebate: "۶%",
-        discount: "۴۳,۲۸۹,۰۰۰"
-    },
-    {
-        id: 6,
-        image: productDigikala6,
-        price:"۲۱,۰۹۹,۰۰۰",
-        rebate: "۴%",
-        discount: "۲۱,۸۹۹,۰۰۰"
-    },
-    {
-        id: 7,
-        image: productDigikala7,
-        price:"۶۹۵,۰۰۰",
-        rebate: "۴۹%",
-        discount: "۱,۳۶۰,۰۰۰"
-    },
-    {
-        id: 8,
-        image: productDigikala8,
-        price:"۲۹,۹۰۰",
-        rebate: "۴۰%",
-        discount: "۵۰,۰۰۰"
-    },
-    {
-        id: 9,
-        image: productDigikala9,
-        price:"۸,۲۵۰,۰۰۰",
-        rebate: "۵%",
-        discount: "۸,۷۰۰,۰۰۰"
-    },
-]
-function getProductData(id){
-    let productData = dataProductDigikala.find((product)=> product.id === id)
-    return productData
+// const dataProductDigikala = [
+//     {
+//         id: 1,
+//         image: productDigikala1,
+//         price:"۶۹۹۰۰۰",
+//         rebate: "۹%",
+//         discount: "۷۶۵۰۰۰"
+//     },
+//     {
+//         id: 2,
+//         image: productDigikala2,
+//         price:"۹۴۹۹۰۰۰",
+//         rebate: "۵%",
+//         discount: "۹۹۹۹۰۰۰"
+//     },
+//     {
+//         id: 3,
+//         image: productDigikala3,
+//         price:"۱۵,۵۹۵,۰۰۰",
+//         rebate: "3%",
+//         discount: "۱۶,۱۴۹,۰۰۰"
+//     },
+//     {
+//         id: 4,
+//         image: productDigikala4,
+//         price:"۹,۲۸۰,۰۰۰",
+//         rebate: "3%",
+//         discount: "۹,۵۶۹,۰۰۰"
+//     },
+//     {
+//         id: 5,
+//         image: productDigikala5,
+//         price:"۴۰,۸۸۹,۰۰۰",
+//         rebate: "۶%",
+//         discount: "۴۳,۲۸۹,۰۰۰"
+//     },
+//     {
+//         id: 6,
+//         image: productDigikala6,
+//         price:"۲۱,۰۹۹,۰۰۰",
+//         rebate: "۴%",
+//         discount: "۲۱,۸۹۹,۰۰۰"
+//     },
+//     {
+//         id: 7,
+//         image: productDigikala7,
+//         price:"۶۹۵,۰۰۰",
+//         rebate: "۴۹%",
+//         discount: "۱,۳۶۰,۰۰۰"
+//     },
+//     {
+//         id: 8,
+//         image: productDigikala8,
+//         price:"۲۹,۹۰۰",
+//         rebate: "۴۰%",
+//         discount: "۵۰,۰۰۰"
+//     },
+//     {
+//         id: 9,
+//         image: productDigikala9,
+//         price:"۸,۲۵۰,۰۰۰",
+//         rebate: "۵%",
+//         discount: "۸,۷۰۰,۰۰۰"
+//     },
+// ]
+
+// let date = fetch('https://api.escuelajs.co/api/v1/products')
+// let response = date.json()
+// const dataProductDigikala = response;
+// function getProductData(id){
+//     let productData = dataProductDigikala.find((product)=> product.id === id)
+//     return productData
+// }
+
+let dataProductDigikala = null;
+
+// Function to fetch product data (only if not already fetched)
+async function fetchProductData() {
+    if (!dataProductDigikala) {
+        let response = await fetch('https://api.escuelajs.co/api/v1/products');
+        dataProductDigikala = await response.json();
+        console.log(dataProductDigikala)
+    }
+    return dataProductDigikala;
+}
+// Function to get product data by ID
+async function getProductData(id) {
+    let products = await fetchProductData();
+    let productData = products.find((product) => product.id === id);
+    return productData;
 }
 
-export {dataServies, dataProductDigikala,getProductData}
+// Exporting the functions
+
+export {dataServies, fetchProductData,getProductData}
